@@ -6,56 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
     <!-- header start -->
     <header class="header">
-        <div class="header__container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <div class="header__logo-link">
-                        <a href="#" class="logo__link">
-                            <svg width="45" height="25" viewBox="0 0 45 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__mobile-menu">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <svg viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M14.5622 24.1479H19.5453L22.3618 21.2845L25.1782 24.1479H30.1419L22.352 16.2282L14.5622 24.1479ZM0 7.08275L8.39421 23.56L13.4754 18.6444L7.4009 9.02098L0 7.08275ZM44.8052 7.08021L36.4111 23.5575L31.3299 18.6419L37.4045 9.01843L44.8052 7.08021ZM22.355 0.714355L13.9801 12.2013L16.2152 15.9675L22.355 9.91466L28.4947 15.9675L30.7297 12.2013L22.355 0.714355Z"
                                     fill="white" />
                             </svg>
-                            <div class="logo__text">WEB ALTERNATIVE</div>
+                            <div class="header__logo-text">WEB ALTERNATIVE</div>
                         </a>
                     </div>
-                    <button class="menu__button">
+                    <button class="header__mobile-btn">
                         <span></span>
                     </button>
                 </div>
                 <div class="header__nav">
                     <div class="header__call">
-                        <button class="call__btn">
+                        <a class="header__call-btn" href="tel:+7 (4212) 25-30-85">
                             Заказать звонок
-                        </button>
-                        <a class="call__link" href="tel:+7 (4212) 25-30-85">+7 (4212) 25-30-85</a>
+                        </a>
+                        <a class="header__call-link" href="tel:+7 (4212) 25-30-85">+7 (4212) 25-30-85</a>
                     </div>
                     <nav class="header__menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">О студии</a>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">О студии</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Портфолио</a>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Портфолио</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Наши услуги</a>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Наши услуги</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Новости</a>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Новости</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Отзывы</a>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Отзывы</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Контакты</a>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,81 +67,78 @@
     <!-- header end -->
 
     <!-- -main banner start -->
-    <section>
-        <div class="main">
-            <div class="container">
-                <div class="main__banner">
-                    <div class="banner__text">
-                        <div class="banner__text-title">
-                            <p><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+    <section class="head">
+        <div class="container">
+            <div class="head__block">
+                <div class="head__main-items">
+                    <div class="head__main-text">
+                        <span class="head__main-ecommerce"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.00448 9.31435C3.42931 9.31435 2.95871 9.78494 2.95871 10.3601C2.95871 10.9353 3.42931 11.4059 4.00448 11.4059C4.57965 11.4059 5.05024 10.9353 5.05024 10.3601C5.05024 9.78494 4.57965 9.31435 4.00448 9.31435ZM0.867188 0.948242V1.99401H1.91295L3.79533 5.96791L3.06329 7.22282C3.011 7.37969 2.95871 7.58884 2.95871 7.74571C2.95871 8.32088 3.42931 8.79147 4.00448 8.79147H10.2791V7.74571H4.21363C4.16134 7.74571 4.10905 7.69342 4.10905 7.64113V7.58882L4.57965 6.69992H8.44897C8.86728 6.69992 9.18101 6.49077 9.33787 6.17704L11.2202 2.77833C11.3248 2.67375 11.3248 2.62146 11.3248 2.51689C11.3248 2.20316 11.1157 1.99401 10.8019 1.99401H3.06329L2.5927 0.948242H0.867188ZM9.2333 9.31435C8.65813 9.31435 8.18753 9.78494 8.18753 10.3601C8.18753 10.9353 8.65813 11.4059 9.2333 11.4059C9.80847 11.4059 10.2791 10.9353 10.2791 10.3601C10.2791 9.78494 9.80847 9.31435 9.2333 9.31435Z"
+                                    fill="#FF834E" />
+                            </svg>
+                            E-commerce
+                        </span>
+                        <h1 class="head__main-title">
+                            Интернет-магазин принесет вам максимум прибыли!
+                        </h1>
+                        <span class="head__main-subtext">
+                            Рассказываем что такое интернет магазин и зачем это нужно.
+                        </span>
+                    </div>
+                    <div class="head__main-mobile">
+                        <img class="head__main-mobile-img" src="/img/main/Img.png" alt="app">
+                    </div>
+                    <div class="head__main-call">
+                        <button class="head__main-call-btn">
+                            <span class="head__main-call-mob">
+                                Заказать звонок
+                            </span>
+                            <span class="head__main-call-desc">
+                                Выйти на связь
+                            </span>
+                            <span class="head__main-arrow">
+                                <span class="head__main-arrow-img">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M4.00448 9.31435C3.42931 9.31435 2.95871 9.78494 2.95871 10.3601C2.95871 10.9353 3.42931 11.4059 4.00448 11.4059C4.57965 11.4059 5.05024 10.9353 5.05024 10.3601C5.05024 9.78494 4.57965 9.31435 4.00448 9.31435ZM0.867188 0.948242V1.99401H1.91295L3.79533 5.96791L3.06329 7.22282C3.011 7.37969 2.95871 7.58884 2.95871 7.74571C2.95871 8.32088 3.42931 8.79147 4.00448 8.79147H10.2791V7.74571H4.21363C4.16134 7.74571 4.10905 7.69342 4.10905 7.64113V7.58882L4.57965 6.69992H8.44897C8.86728 6.69992 9.18101 6.49077 9.33787 6.17704L11.2202 2.77833C11.3248 2.67375 11.3248 2.62146 11.3248 2.51689C11.3248 2.20316 11.1157 1.99401 10.8019 1.99401H3.06329L2.5927 0.948242H0.867188ZM9.2333 9.31435C8.65813 9.31435 8.18753 9.78494 8.18753 10.3601C8.18753 10.9353 8.65813 11.4059 9.2333 11.4059C9.80847 11.4059 10.2791 10.9353 10.2791 10.3601C10.2791 9.78494 9.80847 9.31435 9.2333 9.31435Z"
-                                            fill="#FF834E" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.21895 1.45829C6.00642 1.45829 5.83412 1.286 5.83412 1.07346C5.83412 0.860916 6.00642 0.688619 6.21895 0.688619L12.5893 0.688618C12.7164 0.688619 12.8291 0.750225 12.8992 0.845205C12.9935 0.915348 13.0545 1.0276 13.0545 1.15412L13.0545 7.5245C13.0545 7.73704 12.8822 7.90934 12.6697 7.90934C12.4571 7.90934 12.2848 7.73704 12.2848 7.5245L12.2848 1.85761L0.823379 13.3191C0.673091 13.4693 0.429427 13.4693 0.279138 13.3191C0.12885 13.1688 0.12885 12.9251 0.279138 12.7748L11.5957 1.45829L6.21895 1.45829Z"
+                                            fill="white" />
                                     </svg>
                                 </span>
-                                E-commerce
-                            </p>
-                            <h1>
-                                Интернет-магазин принесет вам максимум прибыли!
-                            </h1>
-                            <span class="prompt__text">
-                                Рассказываем что такое интернет магазин и зачем это нужно.
                             </span>
-                        </div>
-                        <div class="banner__mobile">
-                            <img class="mobile__img" src="/img/Img.png" alt="app">
-                        </div>
-                        <div class="banner__text-btn">
-                            <button class="banner__call">
-                                <span class="call__mobile">
-                                    Заказать звонок
-                                </span>
-                                <span class="call__desktop">
-                                    Выйти на связь
-                                </span>
-                                <span class="banner__arrow">
-                                    <span class="arrow__img">
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M6.21895 1.45829C6.00642 1.45829 5.83412 1.286 5.83412 1.07346C5.83412 0.860916 6.00642 0.688619 6.21895 0.688619L12.5893 0.688618C12.7164 0.688619 12.8291 0.750225 12.8992 0.845205C12.9935 0.915348 13.0545 1.0276 13.0545 1.15412L13.0545 7.5245C13.0545 7.73704 12.8822 7.90934 12.6697 7.90934C12.4571 7.90934 12.2848 7.73704 12.2848 7.5245L12.2848 1.85761L0.823379 13.3191C0.673091 13.4693 0.429427 13.4693 0.279138 13.3191C0.12885 13.1688 0.12885 12.9251 0.279138 12.7748L11.5957 1.45829L6.21895 1.45829Z"
-                                                fill="white" />
-                                        </svg>
-                                    </span>
-                                </span>
-                            </button>
-                            <p>Ответим на любой вопрос</p>
-                        </div>
+                        </button>
+                        <div class="head__main-last-text">Ответим на любой вопрос</div>
                     </div>
-                    <div class="banner__photo">
-                        <img class="desktop__img" src="/img/Img-desk.png" alt="app">
-                    </div>
+                </div>
+                <div class="head__main-desc">
+                    <img class="head__main-desc-img" src="/img/main/Img-desk.png" alt="app">
                 </div>
             </div>
         </div>
     </section>
     <!-- -main banner end -->
 
-    <!-- step projects start -->
-    <section>
-        <div class="step">
-            <div class="container">
-                <div class="step__body">
-                    <div class="step__title">
-                        <h3 class="title">
-                            КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ
-                        </h3>
-                    </div>
-                    <div class="step__items">
-                        <div class="step__desk">
-                            <!-- first step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+    <!-- work start -->
+    <section class="work">
+        <div class="container">
+            <div class="work__body">
+                <div class="work__title">
+                    <h3 class="title">
+                        КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ
+                    </h3>
+                </div>
+                <div class="work__step-item">
+                    <div class="work__step-items">
+                        <div class="work__desktop">
+                            <!-- first work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         01
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="81" height="81" viewBox="0 0 81 81" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1_4535)">
@@ -161,36 +159,36 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 АНАЛИЗ ЦЕЛЕВОЙ АУДИТОРИИ
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
 
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="0">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="0">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -203,14 +201,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- first step -->
-                            <!-- second step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+                            <!-- first work item -->
+                            <!-- second work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         02
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -243,35 +241,35 @@
                                                 d="M1.18418 19.281H53.7631C54.4173 19.281 54.9473 18.751 54.9473 18.0968V1.18418C54.9473 0.52998 54.4173 0 53.7631 0H50.246C49.5918 0 49.0619 0.530127 49.0619 1.18418C49.0619 1.83823 49.592 2.36836 50.246 2.36836H52.579V16.9124H2.36836V2.36836H46.2822C46.9364 2.36836 47.4664 1.83823 47.4664 1.18418C47.4664 0.530127 46.9364 0 46.2823 0H1.18418C0.530273 0 0 0.530273 0 1.18418V18.0967C0 18.7507 0.530273 19.281 1.18418 19.281Z" />
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 ПОДГОТОВКА ТЗ
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="1">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="1">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -284,14 +282,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- second step -->
-                            <!-- third step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+                            <!-- second work item -->
+                            <!-- third work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         03
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1_4608)">
@@ -325,36 +323,36 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 ПОДПИСАНИЕ ДОГОВОРА
                                                 И ОПЛАТА
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="2">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="2">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -367,16 +365,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- third step -->
+                            <!-- third work item -->
                         </div>
-                        <div class="step__desk">
-                            <!-- fourth step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+                        <div class="work__desktop">
+                            <!-- fourth work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         04
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1_4641)">
@@ -448,36 +446,36 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 РАЗРАБОТКА САЙТА
                                                 ИНТЕРНЕТ-МАГАЗИНА
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="3">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="3">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -490,14 +488,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- fourth step -->
-                            <!-- fifth step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+                            <!-- fourth work item -->
+                            <!-- fifth work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         05
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1_4687)">
@@ -553,36 +551,36 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 НАСТРОЙКА И НАПОЛНЕНИЕ
                                                 ИНТЕРНЕТ-МАГАЗИНА
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="4">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="4">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -595,14 +593,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- fifth step -->
-                            <!-- sixth step -->
-                            <div class="step__item">
-                                <div class="step__subitems">
-                                    <div class="step__item-num">
+                            <!-- fifth work item -->
+                            <!-- sixth work item -->
+                            <div class="work__item">
+                                <div class="work__subitems">
+                                    <div class="work__item-num">
                                         06
                                     </div>
-                                    <div class="step__item-icon">
+                                    <div class="work__item-icon">
                                         <svg width="89" height="89" viewBox="0 0 89 89" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -621,35 +619,35 @@
                                                 d="M59.8501 68.9841C59.13 68.9841 58.5463 69.5678 58.5463 70.2878V75.8637C58.5463 76.5837 59.13 77.1674 59.8501 77.1674C60.5701 77.1674 61.1538 76.5837 61.1538 75.8637V70.2878C61.1538 69.568 60.5701 68.9841 59.8501 68.9841Z" />
                                         </svg>
                                     </div>
-                                    <div class="step__subitems-body">
-                                        <div class="step__item-text">
-                                            <span class="step__name">
+                                    <div class="work__subitems-body">
+                                        <div class="work__item-text">
+                                            <span class="text-title work__name">
                                                 ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ
                                             </span>
-                                            <button class="step__btn">
-                                                <span class="step__more">
+                                            <button class="work__btn">
+                                                <span class="work__more">
                                                     Подробнее
-                                                    <span class="more__icon">
+                                                    <span class="work__icon">
                                                     </span>
                                                 </span>
                                             </button>
                                         </div>
-                                        <button class="more__info-btn">
-                                            <img class="info__arrow" src="/img/Vector.png" alt="arrow">
+                                        <button class="work__info-btn">
+                                            <img class="work__arrow" src="/img/work/Vector.png" alt="arrow">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="more__modal" id="5">
-                                    <div class="more__modal-body">
-                                        <button class="more__close-btn">
-                                            <span class="more__close-span"></span>
+                                <div class="work__modal" id="5">
+                                    <div class="work__modal-body">
+                                        <button class="work__close-btn">
+                                            <span class="work__close-span"></span>
                                         </button>
-                                        <div class="more__info">
-                                            <h3 class="more__info-title">
+                                        <div class="work__info">
+                                            <h3 class="text-title work__info-title">
                                                 Принимайте платежи картой, с помощью
                                                 удобных платежных систем!
                                             </h3>
-                                            <p class="more__info-text">
+                                            <p class="text work__info-text">
                                                 Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса,
                                                 PayPal,
                                                 Robokassa
@@ -662,125 +660,436 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- sixth step -->
+                            <!-- sixth work item -->
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- step projects end -->
+    <!-- work end -->
 
     <!-- features start -->
-    <section>
-        <div class="features">
-            <div class="container">
-                <div class="features__body">
-                    <div class="features__sub-body">
-                        <div class="features__mockup">
-                            <img class="features__mockup-img" src="/img/features_moc-removebg-preview.png" alt="mockup">
-                        </div>
+    <section class="features">
+        <div class="container">
+            <div class="features__body">
+                <div class="features__sub-body active">
+                    <div class="features__mockup">
+                        <img class="features__mockup-img" src="/img/features/Pay info.png" alt="mockup">
+                    </div>
+                    <div class="features__description-body">
                         <div class="features__description">
-                            <div class="features__title">
-                                <h4>
-                                    Принимайте платежи картой, с помощью удобных платежных систем!
-                                </h4>
+                            <h4 class="text-title features__description-title">
+                                Принимайте платежи картой, с помощью удобных платежных систем!
+                            </h4>
+                            <p class="text features__description-text">
+                                Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa
+                                или Stripe, и ваши покупатели
+                                смогут безопасно оплатить товар или услугу картой Visa или Mastercard,
+                                Яндекс.Деньгами, со счета мобильного телефона,
+                                через Сбербанк Онлайн или Альфа Клик.
+                            </p>
+                        </div>
+                        <div class="features__logo features__logo-mod">
+                            <div class="features__logo-item features__logo-sber">
+                                <img class="features__logo-sber-img" src="/img/features/sber-removebg-preview.png"
+                                    alt="sber-bank">
                             </div>
-                            <div class="features__text">
-                                <p>
-                                    Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa
-                                    или Stripe, и ваши покупатели
-                                    смогут безопасно оплатить товар или услугу картой Visa или Mastercard,
-                                    Яндекс.Деньгами, со счета мобильного телефона,
-                                    через Сбербанк Онлайн или Альфа Клик.
-                                </p>
+                            <div class="features__logo-item features__logo-yandex">
+                                <img class="features__logo-yandex-img" src="/img/features/Yandex-removebg-preview.png"
+                                    alt="yandex">
+                                <svg width="196" height="54" viewBox="0 0 196 54" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="mask0_1_4393" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="196" height="54">
+                                        <rect width="195.246" height="53.888" fill="url(#pattern0)" />
+                                    </mask>
+                                    <g mask="url(#mask0_1_4393)">
+                                        <rect x="51.9272" y="0.249268" width="146.435" height="51.9272" />
+                                    </g>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_1_4393" transform="scale(0.004 0.0144928)" />
+                                        </pattern>
+                                        <image id="image0_1_4393" width="250" height="69"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </defs>
+                                </svg>
                             </div>
-                            <div class="features__logo">
-                                <div class="features__logo-item features__logo-sber">
-                                    <img class="features__logo-sber" src="/img/sber-removebg-preview.png" alt="sber-bank">
-                                </div>
-                                <div class="features__logo-item features__logo-yandex">
-                                    <img class="features__logo-yandex" src="/img/Yandex-removebg-preview.png" alt="yandex">
-                                    <svg width="196" height="54" viewBox="0 0 196 54" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <mask id="mask0_1_4393" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="196" height="54">
-                                            <rect width="195.246" height="53.888" fill="url(#pattern0)" />
-                                        </mask>
-                                        <g mask="url(#mask0_1_4393)">
-                                            <rect x="51.9272" y="0.249268" width="146.435" height="51.9272"/>
-                                        </g>
-                                        <defs>
-                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                                <use xlink:href="#image0_1_4393" transform="scale(0.004 0.0144928)" />
-                                            </pattern>
-                                            <image id="image0_1_4393" width="250" height="69"
-                                                xlink:href="data:image/png;base64,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" />
-                                        </defs>
-                                    </svg>
-                                </div>
-                                <div class="features__logo-item features__logo-robo">
-                                    <img class="features__logo-robo" src="/img/logo-robokassa-removebg-preview.png" alt="robo-kassa">
-                                </div>
+                            <div class="features__logo-item features__logo-robo">
+                                <img class="features__logo-robo-img"
+                                    src="/img/features/logo-robokassa-removebg-preview.png" alt="robo-kassa">
                             </div>
                         </div>
+                        <div class="border"></div>
                     </div>
-                    <div class="features__sub-body">
-                        <div class="features__mockup">
-                            <img class="features__mockup-img" src="/img/features_moc-removebg-preview.png" alt="mockup">
-                        </div>
+                </div>
+                <div class="features__sub-body">
+                    <div class="features__mockup">
+                        <img class="features__mockup-secure" src="/img/features/secure.png" alt="mockup">
+                    </div>
+                    <div class="features__description-body">
                         <div class="features__description">
-                            <div class="features__title">
-                                <h4>
-                                    Принимайте картой, пустые нули !
-                                </h4>
-                            </div>
-                            <div class="features__text">
-                                <p>
-                                    Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa
-                                    или Stripe, и ваши покупатели смогут безопасно.
-                                </p>
-                            </div>
-                            <div class="features__logo">
-                                <div class="features__logo-item">
-                                    <img class="features__logo-items" src="/img/secure.png" alt="secure">
-                                </div>
+                            <h4 class="text-title features__description-title">
+                                Принимайте картой, пустые нули !
+                            </h4>
+                            <p class="text features__description-text">
+                                Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa
+                                или Stripe, и ваши покупатели смогут безопасно.
+                            </p>
+                        </div>
+                        <div class="features__logo features__logo-mob">
+                            <div class="features__logo-item">
+                                <img class="features__logo-items" src="/img/features/Group 6.png" alt="secure">
                             </div>
                         </div>
+                        <div class="border"></div>
                     </div>
-                    <div class="features__sub-body">
-                        <div class="features__mockup">
-                            <img class="features__mockup-img" src="/img/features_moc-removebg-preview.png" alt="mockup">
-                        </div>
+                </div>
+                <div class="features__sub-body">
+                    <div class="features__mockup">
+                        <img class="features__mockup-img" src="/img/features/Group 2.png" alt="mockup">
+                    </div>
+                    <div class="features__description-body">
                         <div class="features__description">
-                            <div class="features__title">
-                                <h4>
-                                    Интегрируем неинтегрируемое!
-                                </h4>
-                            </div>
-                            <div class="features__text">
-                                <p>
-                                    Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели
-                                    смогут безопасно.
-                                </p>
-                            </div>
-                            <div class="features__logo">
-                                <div class="features__logo-item">
-                                    <img class="features__logo-items" src="/img/1c.png" alt="1C">
-                                </div>
+                            <h4 class="text-title features__description-title">
+                                Интегрируем неинтегрируемое!
+                            </h4>
+                            <p class="text features__description-text">
+                                Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или
+                                Stripe, и ваши покупатели
+                                смогут безопасно.
+                            </p>
+                        </div>
+                        <div class="features__logo features__logo-mob">
+                            <div class="features__logo-item">
+                                <img class="features__logo-items" src="/img/features/1c.png" alt="1C">
                             </div>
                         </div>
                     </div>
-                    <div class="features__link">
-                        <a class="features__link-item" href="#">Безопастность</a>
-                        <a class="features__link-item" href="#">CRM & 1C</a>
-                        <a class="features__link-item" href="#">Онлайн оплата</a>
-                    </div>
+                </div>
+                <div class="features__link">
+                    <a class="text features__link-item active">Онлайн оплата</a>
+                    <a class="text features__link-item">Безопастность</a>
+                    <a class="text features__link-item">CRM & 1C</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- features end -->
+
+    <div class="mob__inner">
+
+        <!-- cases start -->
+        <section class="cases">
+            <div class="container">
+                <div class="cases__content">
+                    <h3 class="title cases__content-title--mob">
+                        НАШИ КЕЙСЫ
+                    </h3>
+                    <h3 class="title cases__content-title--desc">
+                        кейсы говорят за себя
+                    </h3>
+                    <div class="cases__items">
+
+                        <div class="cases__item">
+                            <div class="cases__item-body">
+                                <div class="cases__img">
+                                    <picture class="cases__image">
+                                        <source class="cases__image" srcset="/img/cases/gabor-juhasz-68424-unsplash.jpg"
+                                            media="(min-width: 767px)">
+                                        <img class="cases__image" src="/img/cases/gabor-juhasz-68424-unsplash.png"
+                                            alt="case">
+                                    </picture>
+                                </div>
+                                <div class="cases__subtitle">
+                                    <h4 class="cases__item-title">Королевство цветов</h4>
+                                    <p class="cases__item-text">Интернет-магазин</p>
+                                </div>
+                            </div>
+                            <div class="cases__border"></div>
+                        </div>
+
+                        <div class="cases__item">
+                            <div class="cases__item-body">
+                                <div class="cases__img">
+                                    <picture class="cases__image">
+                                        <source class="cases__image" srcset="/img/cases/ales-krivec-4176-unsplash.jpg"
+                                            media="(min-width: 767px)">
+                                        <img class="cases__image" src="/img/cases/ales-krivec-4176-unsplash.png"
+                                            alt="case">
+                                    </picture>
+                                </div>
+                                <div class="cases__subtitle">
+                                    <h4 class="cases__item-title">Мастер климат</h4>
+                                    <p class="cases__item-text">Интернет-магазин</p>
+                                </div>
+                            </div>
+                            <div class="cases__border"></div>
+                        </div>
+
+                        <div class="cases__item">
+                            <div class="cases__item-body">
+                                <div class="cases__img">
+                                    ​<picture class="cases__image">
+                                        <source class="cases__image"
+                                            srcset="/img/cases/sharon-mccutcheon-535694-unsplash.jpg"
+                                            media="(min-width: 767px)">
+                                        <img class="cases__image" src="/img/cases/sharon-mccutcheon-535694-unsplash.png"
+                                            alt="case">
+                                    </picture>
+                                </div>
+                                <div class="cases__subtitle">
+                                    <h4 class="cases__item-title">Новая аптека</h4>
+                                    <p class="cases__item-text">Интернет-магазин</p>
+                                </div>
+                            </div>
+                            <div class="cases__border"></div>
+                        </div>
+
+                        <div class="cases__item">
+                            <div class="cases__item-body">
+                                <div class="cases__img">
+                                    <picture class="cases__image">
+                                        <source class="cases__image" srcset="/img/cases/russ-ward-485776-unsplash.jpg"
+                                            media="(min-width: 767px)">
+                                        <img class="cases__image" src="/img/cases/russ-ward-485776-unsplash.png"
+                                            alt="case">
+                                    </picture>
+                                </div>
+                                <div class="cases__subtitle">
+                                    <h4 class="cases__item-title">Восток Тех Резерв</h4>
+                                    <p class="cases__item-text">Интернет-магазин</p>
+                                </div>
+                            </div>
+                            <div class="cases__border"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="request">
+                    <svg width="192" height="194" viewBox="0 0 192 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M125.383 6.92552L30.9999 27.819C24.3539 29.2902 18.4878 32.7758 14.0347 37.8986C13.1664 38.8975 13.2723 40.4113 14.2712 41.2796C15.2702 42.1479 16.7837 42.0414 17.6522 41.0431C21.4263 36.7009 26.4001 33.7461 32.0358 32.4985L126.419 11.6051C140.81 8.41938 155.109 17.5358 158.295 31.9265L171.999 93.8303C175.184 108.221 166.068 122.521 151.677 125.707L111.785 134.538C110.821 134.751 109.979 135.36 109.475 136.208L84.9774 177.366C84.4484 178.254 83.6002 178.223 83.2605 178.168C82.9204 178.114 82.1054 177.878 81.8819 176.868L75.1223 146.332C74.6942 144.399 72.7732 143.174 70.8397 143.602L57.2944 146.601C42.9033 149.786 28.6034 140.67 25.4177 126.279L11.714 64.375C10.542 59.0806 10.9894 53.6348 13.0082 48.6267C13.5027 47.399 12.9091 46.0031 11.6817 45.5082C10.4546 45.0132 9.05789 45.6077 8.56322 46.8347C6.18146 52.7443 5.65279 59.1677 7.03482 65.4108L20.7384 127.315C24.4952 144.286 41.3591 155.036 58.3305 151.28L70.7026 148.541L77.2027 177.904C77.7806 180.514 79.8595 182.476 82.4992 182.9C83.3313 183.034 84.1584 183.005 84.9436 182.832C86.6499 182.454 88.1593 181.39 89.0959 179.817L113.328 139.105L152.713 130.386C169.685 126.63 180.435 109.766 176.679 92.7946L162.975 30.8906C159.218 13.9194 142.355 3.16857 125.383 6.92552Z"
+                            fill="white" />
+                        <path
+                            d="M120.121 47.525C110.203 41.2017 96.9888 44.1276 90.6651 54.0457L87.4899 59.0268C87.4814 59.04 87.4553 59.081 87.3928 59.0949C87.3306 59.1086 87.2901 59.0831 87.2766 59.074L82.3749 55.9493C72.4563 49.6261 59.2421 52.5516 52.9188 62.47C46.5956 72.3886 49.5209 85.6031 59.4396 91.9263L96.28 115.412C97.3943 116.123 98.7184 116.357 100.008 116.071C101.298 115.785 102.4 115.014 103.111 113.9L116.017 93.6518C116.728 92.5355 116.4 91.0541 115.284 90.3432C114.168 89.6319 112.686 89.9596 111.975 91.0759L99.0692 111.324C99.0607 111.337 99.0344 111.378 98.9726 111.391C98.9101 111.405 98.8695 111.38 98.8561 111.371L62.0157 87.8846C54.3252 82.9816 52.0573 72.7366 56.9599 65.0459C61.8625 57.3552 72.1079 55.0878 79.7983 59.9902L84.6997 63.1149C85.814 63.8253 87.1382 64.0594 88.4282 63.7739C89.7186 63.4882 90.82 62.7174 91.5307 61.6031L94.7062 56.6219C99.6102 48.9315 109.855 46.6638 117.545 51.5661C125.235 56.4688 127.503 66.7138 122.601 74.4048L117.162 82.9381C116.45 84.0543 116.778 85.5358 117.895 86.2467C119.011 86.958 120.492 86.6304 121.203 85.514L126.642 76.9809C132.965 67.0624 130.04 53.8482 120.121 47.525Z"
+                            fill="white" />
+                    </svg>
+
+                    <div class="request__body">
+                        <div class="request__icon">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_5835)">
+                                    <path
+                                        d="M34.9475 0.259338H9.51968C7.72919 0.259338 6.02446 0.821022 4.58956 1.88351C4.30976 2.09069 4.25089 2.48547 4.45808 2.76527C4.66526 3.04506 5.06004 3.10377 5.33984 2.89675C6.55599 1.99615 8.00137 1.52005 9.51968 1.52005H34.9474C38.8245 1.52005 41.9787 4.67434 41.9787 8.55136V25.2289C41.9787 29.106 38.8244 32.2602 34.9474 32.2602H24.1999C23.9402 32.2602 23.6893 32.3687 23.5118 32.5577L14.8803 41.7354C14.6939 41.9334 14.4779 41.8772 14.3937 41.844C14.3094 41.8106 14.1136 41.7036 14.1136 41.4316V33.205C14.1136 32.6841 13.6898 32.2603 13.1689 32.2603H9.51968C5.64258 32.2603 2.48829 29.106 2.48829 25.229V8.55136C2.48829 7.125 2.9128 5.75181 3.716 4.58038C3.91281 4.29321 3.8397 3.90095 3.55262 3.70406C3.26562 3.50717 2.8731 3.58045 2.6763 3.86745C1.72863 5.24976 1.22766 6.8694 1.22766 8.55136V25.2289C1.22766 29.801 4.94749 33.5209 9.51976 33.5209H12.8529V41.4316C12.8529 42.1349 13.2753 42.7568 13.9292 43.0159C14.1353 43.0976 14.3493 43.1372 14.5608 43.1372C15.0205 43.1372 15.4687 42.9499 15.7986 42.5992L24.3365 33.521H34.9475C39.5196 33.521 43.2395 29.8011 43.2395 25.2289V8.55136C43.2395 3.97916 39.5197 0.259338 34.9475 0.259338Z"
+                                        fill="white" />
+                                    <path
+                                        d="M31.2881 10.3872C29.1003 8.19937 25.5402 8.19954 23.3522 10.3872L22.2536 11.486C22.2506 11.4889 22.2416 11.498 22.2247 11.498C22.208 11.498 22.199 11.4891 22.1961 11.486L21.1149 10.4048C18.927 8.21696 15.367 8.21704 13.1791 10.4048C10.9912 12.5927 10.9912 16.1528 13.1791 18.3407L21.3054 26.4669C21.5512 26.7127 21.878 26.8481 22.2255 26.8481C22.573 26.8481 22.8999 26.7127 23.1456 26.4669L27.6114 22.0004C27.8576 21.7541 27.8576 21.355 27.6113 21.109C27.3651 20.8628 26.9659 20.8628 26.7199 21.1091L22.2541 25.5756C22.2512 25.5785 22.2422 25.5874 22.2255 25.5874C22.2087 25.5874 22.1997 25.5785 22.1968 25.5754L14.0705 17.4491C12.3741 15.7527 12.3741 12.9926 14.0705 11.2961C15.7669 9.59969 18.527 9.59985 20.2234 11.2961L21.3045 12.3773C21.5503 12.6231 21.8771 12.7585 22.2247 12.7585C22.5723 12.7585 22.899 12.6232 23.1449 12.3774L24.2436 11.2786C25.9403 9.58235 28.7002 9.58235 30.3966 11.2786C32.0929 12.975 32.0929 15.7351 30.3966 17.4316L28.5147 19.314C28.2684 19.5602 28.2684 19.9593 28.5147 20.2053C28.7609 20.4515 29.1601 20.4516 29.4061 20.2053L31.2881 18.323C33.4759 16.1351 33.4759 12.5751 31.2881 10.3872Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_5835">
+                                        <rect width="42.8779" height="42.8779" fill="white"
+                                            transform="translate(0.794434 0.259338)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="text request__text">
+                            Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консултацию!
+                        </div>
+                    </div>
+                    <button class="text-title request__btn">
+                        Оставить заявку
+                        <span class="request__arrow">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.70008 1.32388C6.46583 1.32388 6.27594 1.13399 6.27594 0.899743C6.27594 0.665499 6.46583 0.475607 6.70008 0.475607L13.721 0.475606C13.8607 0.475606 13.9846 0.543134 14.0619 0.647325C14.1661 0.724602 14.2336 0.848515 14.2336 0.988207L14.2336 8.00914C14.2336 8.24338 14.0437 8.43328 13.8095 8.43328C13.5752 8.43328 13.3853 8.24338 13.3853 8.00914L13.3853 1.76378L0.753374 14.3957C0.587738 14.5614 0.31919 14.5614 0.153554 14.3957C-0.0120818 14.2301 -0.0120819 13.9616 0.153554 13.7959L12.6256 1.32388L6.70008 1.32388Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="border"></div>
+            </div>
+        </section>
+        <!-- cases end -->
+
+        <!-- clients start -->
+        <div class="clients">
+            <div class="container-fluid">
+                <div class="clients__content swiper">
+                    <h3 class="title clients__title">НАШИ КЛИЕНТЫ</h3>
+                    <div class="clients__items swiper-wrapper">
+                        <div class="clients__item swiper-slide">
+                            <div class="clients__item-wrapper">
+                                <div class="clients__item-num">
+                                    01
+                                </div>
+                                <div class="clients__item-body">
+                                    <img class="clients__logo" src="/img/clients/77f73b87ae9099f99fe2a5f550b9cd76.png"
+                                        alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__item swiper-slide">
+                            <div class="clients__item-wrapper">
+                                <div class="clients__item-num">
+                                    02
+                                </div>
+                                <div class="clients__item-body">
+                                    <img class="clients__logo" src="/img/clients/header-logo-bg.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__item swiper-slide">
+                            <div class="clients__item-wrapper">
+                                <div class="clients__item-num">
+                                    03
+                                </div>
+                                <div class="clients__item-body">
+                                    <img class="clients__logo" src="/img/clients/rYPlmArkZL8.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__item swiper-slide">
+                            <div class="clients__item-wrapper">
+                                <div class="clients__item-num">
+                                    04
+                                </div>
+                                <div class="clients__item-body">
+                                    <img class="clients__logo" src="/img/clients/italy-logo.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__arrow">
+                        <button class="clients__arrow-btn swiper-button-prev">
+                            <span class="clients__prev"></span>
+                        </button>
+                        <button class="clients__arrow-btn swiper-button-next">
+                            <span class="clients__next"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- clients end -->
+    </div>
+
+
+    <!-- feedback start -->
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__content">
+                <div class="feedback__body">
+                    <p class="text-title feedback__text">Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин</p>
+                    <h4 class="text-title feedback__title">Интернет-магазин, который
+                        приносит прибыль!</h4>
+                    <div class="feedback__box">
+                        <ul class="feedback__list">
+                            <li>Получите бесплатно</li>
+                            <li>Личная косультация</li>
+                            <li>Стратегия запуска и продвижения</li>
+                            <li>Коммерческое предложение</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feedback__form">
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" placeholder="Имя">
+                        <input class="form__input" type="text" placeholder="+7 (000) 000-00-00">
+                        <textarea class="form__message" type="text" placeholder="Расскажите о своей задаче"></textarea>
+                        <div class="form__check">
+                            <div class="form__check-body">
+                                <input type="checkbox" class="form__checkbox" id="checkbox">
+                                <span class="form__checkbox--mod"></span>
+                            </div>
+                            <label for="checkbox">Нажимая на кнопку "Отправить", я даю согласие на обработку
+                                персональных данных.</label>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LfTG3wgAAAAAAt565H1ZDxaFbVwCf4yO6FwS1Wm"></div>
+                        <button class="form__send" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feedback end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img class="footer__webalt" src="/img/footer/Logo.png" />
+                </div>
+                <div class="footer__items">
+                    <h6 class="text-title footer__title">Контакты</h6>
+                    <p class="text footer__item">ул. Волочаевская, 8г</p>
+                    <a class="text footer__item" href="#">+7 (4212)470-300</a>
+                    <a class="text footer__item" href="#">+7 (4212) 25-30-85</a>
+                </div>
+                <div class="footer__items">
+                    <h6 class="text-title footer__title">Мы в соцсетях</h6>
+                    <a class="text footer__item" href="#">Instagram</a>
+                    <a class="text footer__item" href="#">Facebook</a>
+                    <a class="text footer__item" href="#">Vkontakte</a>
+                </div>
+                <div class="footer__find-us">
+                    <a href="#" class="footer__map-link">
+                        <div class="footer__find-text footer__item">Найди нас на карте</div>
+                        <span class="footer__find-arrow"></span>
+                        <div class="footer__map">
+                            <img class="footer__map-item" src="/img/footer/map.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
     <script src="/js/app.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.clients__content', {
+            // Optional parameters
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+                1400: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

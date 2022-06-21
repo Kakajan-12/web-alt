@@ -82,10 +82,6 @@ body {
   line-height: 1;
 }
 
-header {
-  height: 100%;
-}
-
 ol,
 ul {
   list-style: none;
@@ -110,6 +106,5 @@ table {
 }
 
 input {
-  -webkit-appearance: none;
   border-radius: 0;
 }
