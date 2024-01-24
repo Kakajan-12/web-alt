@@ -694,7 +694,7 @@ body.lock {
 }
 
 .head {
-  background: url(./img/main/Blume.png);
+  background: url("./img/main/Blume.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0 25px;
