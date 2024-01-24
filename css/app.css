@@ -694,7 +694,7 @@ body.lock {
 }
 
 .head {
-  background: url("./img/main/Blume.png");
+  background: url("../img/main/Blume.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0 25px;
@@ -1598,7 +1598,7 @@ body.lock {
 
 @media (min-width: 992px) {
   .features {
-    background: url("./img/features/blume2.png");
+    background: url("../img/features/blume2.png");
     background-size: cover;
     background-position: center;
   }
