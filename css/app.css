@@ -856,7 +856,7 @@ body.lock {
 
 @media (min-width: 767px) {
   .head {
-    background: url("./img/main/desk-bg.png");
+    background: url("../img/main/desk-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 0 100px;
@@ -942,7 +942,7 @@ body.lock {
   }
   .head__main-desc {
     display: block;
-    background-image: url("./img/main/E.jpg");
+    background-image: url("../img/main/E.jpg");
     background-size: cover;
     max-height: 440px;
     max-width: 40%;
@@ -1157,7 +1157,7 @@ body.lock {
 
 @media (min-width: 1400px) {
   .work {
-    background: url("./img/work/3.PNG");
+    background: url("../img/work/3.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1186,7 +1186,7 @@ body.lock {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: url("./img/work/Path.svg");
+    background: url("../img/work/Path.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1454,7 +1454,7 @@ body.lock {
 }
 
 .features {
-  background: url("./img/features/BlumeBG.png");
+  background: url("../img/features/BlumeBG.png");
   background-size: cover;
   background-color: #171718;
   background-position: center;
@@ -1616,7 +1616,7 @@ body.lock {
   }
   .features__mockup {
     display: block;
-    background-image: url("./img/features/phone.png");
+    background-image: url("../img/features/phone.png");
     background-size: cover;
     height: 640px;
   }
@@ -1861,7 +1861,7 @@ body.lock {
 
 @media (min-width: 767px) {
   .cases {
-    background: url("./img/cases/desktop-bg.png");
+    background: url("../img/cases/desktop-bg.png");
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -2141,7 +2141,7 @@ body.lock {
 
 @media (min-width: 767px) {
   .clients {
-    background: url("./img/clients/desktop-bg.png");
+    background: url("../img/clients/desktop-bg.png");
     background-size: cover;
     background-position: center;
     padding: 120px 0 200px;
@@ -2233,7 +2233,7 @@ body.lock {
 }
 
 .feedback {
-  background: url("./img/feedback/fancycrave-277756-unsplash.png");
+  background: url("../img/feedback/fancycrave-277756-unsplash.png");
   background-color: #000;
   background-position: top;
   background-size: cover;
@@ -2311,7 +2311,7 @@ body.lock {
 }
 
 .feedback__list li {
-  background: url("./img/feedback/plus.png");
+  background: url("../img/feedback/plus.png");
   background-repeat: no-repeat;
   background-position: left;
   -webkit-box-align: center;
@@ -2343,7 +2343,7 @@ body.lock {
 
 @media (min-width: 992px) {
   .feedback {
-    background: url("./img/feedback/desktop-bg.png");
+    background: url("../img/feedback/desktop-bg.png");
     background-size: cover;
     padding: 210px 0 175px;
   }
